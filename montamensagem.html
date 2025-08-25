@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador ligas individuais</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <meta property="og:title" content="Contador de Palpites">
+        <meta property="og:description" content="Descubra quantos palpites você acertou! Acesse agora e teste!">
+        <meta property="og:image" content="https://contador-de-palpites.vercel.app/sua-imagem.jpeg">
+        <meta property="og:url" content="https://contador-de-palpites.vercel.app/">
+        <meta property="og:type" content="website">
+    </head>
+</head>
+
+<body>
+    <div class="top-footer">
+        <div class="site-name"><a href="/index.html">Farol do empreendedor</a>
+        </div>
+        <nav class="navigation">
+            <div class="dropdown">
+                <button id="menuButton" class="dropdown-toggle">Menu</button>
+                <div id="menuContent" class="dropdown-content">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <body>
+        <div class="container">
+            <h1>Montador de mensagem</h1>
+            <p>Bem-vindo! Siga as instruções abaixo para utilizá-lo:</p>
+            <ul>
+                <li>Erros ou sugestões? Clique no botão "Fale com o Desenvolvedor".</li>
+            </ul>
+            <form>
+                <form>
+                    <!-- Duas caixas de texto pequenas -->
+                    <div class="input-numerico-container">
+                        <div class="input-item">
+                            <label for="atendente">Nome do atendente:</label>
+                            <input type="text" id="atendente" maxlength="30" class="input-pequeno"
+                                placeholder="Atendente">
+                        </div>
+                        <button type="button" onclick="limparCartela('#atendente')">Limpar Atendente</button>
+                        <br></br>
+
+
+                        <label for="nomes-cliente">Cole ou escreva abaixo os Nomes dos clientes:</label>
+                        <textarea id="nomes-cliente" rows="5" placeholder="Lista clientes"></textarea>
+
+                        <button type="button" onclick="limparCartela('#nomes-cliente')">Limpar Nomes</button>
+                        <br></br>
+
+                        <label for="telefone-cliente">Cole ou escreva abaixo os telefones dos clientes:</label>
+                        <textarea id="telefone-cliente" rows="5"
+                            placeholder="Lista de telefones dos clientes"></textarea>
+
+                        <button type="button" onclick="limparCartela('#telefone-cliente')">Limpar Telefones</button>
+                        <br></br>
+
+                        <label for="cnpj-cliente">Cole ou escreva abaixo os cnpjs dos clientes:</label>
+                        <textarea id="cnpj-cliente" rows="5" placeholder="Lista de CNPJ dos clientes"></textarea>
+
+                        <button type="button" onclick="limparCartela('#cnpj-cliente')">Limpar CNPJs</button>
+                        <br></br>
+
+                        <label for="mensagem">Cole ou escreva abaixo a mensagem:</label>
+                        <textarea id="mensagem" rows="5" placeholder="Mensagem que vai mandar pro cliente"></textarea>
+
+                        <button type="button" onclick="limparCartela('#mensagem')">Limpar mensagem</button>
+                        <br></br>
+
+                        <script>
+                            function limparCartela(id) {
+                                const elemento = document.querySelector(id);
+                                if (elemento) {
+                                    elemento.value = '';
+                                }
+                            }
+                        </script>
+
+                        <ul style="margin: 0; padding: 0; text-align: center;">
+                            <strong>⬇️⬇️⬇️Clique no botão para fabrica sua mensagem.⬇️⬇️⬇️</strong>
+                        </ul>
+
+                        <div id="banners-container"></div>
+
+                        <!-- <div class="buttons">
+                            <button type="button" id="botao-calcular"><strong>Calcular minha súmula</strong></button>
+                        </div> -->
+                        <div class="buttons">
+                            <button type="button" id="botao-calcular"><strong>Fabricar minha mensagem</strong></button>
+                        </div>
+                        <div id="resultado-final"></div>
+                        <!-- <button id="copiar-btn">Copiar Resultado</button> -->
+                </form>
+                <div class="whatsapp">
+                    <a href="https://wa.me/5585987636157" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp Logo"
+                            width="20">
+                        Fale com o Desenvolvedor
+                    </a>
+                </div>
+        </div>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p>&copy; 2025 Contador de palpites. Todos os direitos reservados. Feito com ajuda do
+                    <strong>ChatGPT</strong>
+                </p>
+                <nav class="footer-nav">
+                    <a href="/outrosArquivos/sobre.html">Sobre</a>
+                    <a href="https://wa.me/5585987636157">Contato</a>
+                    <a href="/outrosArquivos/politica.html">Política de Privacidade</a>
+                </nav>
+            </div>
+        </footer>
+        <script type="module" src="utils.js" defer></script>
+        <script type="module" src="montaMsg.js" defer></script>
+
+        <div id="cookie-banner"
+            style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 10px; text-align: center; z-index: 1000; display: none;">
+            <p>
+                Usamos cookies para armazenar o resultado final. Ao continuar navegando, você concorda com isso.
+                <button id="accept-cookies"
+                    style="background: #ffd700; border: none; padding: 5px 10px; margin-left: 10px; cursor: pointer;">Ok,
+                    entendi!</button>
+            </p>
+        </div>
+    </body>
+
+</html>

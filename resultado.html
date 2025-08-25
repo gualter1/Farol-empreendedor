@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultados</title>
+    <link rel="stylesheet" href="styles.css">
+
+    <head>
+        <meta property="og:title" content="Contador de Palpites">
+        <meta property="og:description" content="Descubra quantos palpites você acertou! Acesse agora e teste!">
+        <meta property="og:image" content="https://contador-de-palpites.vercel.app/sua-imagem.jpeg">
+        <meta property="og:url" content="https://contador-de-palpites.vercel.app/">
+        <meta property="og:type" content="website">
+    </head>
+</head>
+
+<body>
+    <div class="top-footer">
+        <div class="site-name"><a href="/index.html">Farol do empreendedor</a>
+        </div>
+        <nav class="navigation">
+            <div class="dropdown">
+                <button id="menuButton" class="dropdown-toggle">Menu</button>
+                <div id="menuContent" class="dropdown-content">
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <body>
+        <div class="container">
+
+            <header>
+
+                <body>
+                    <main>
+                        <h1>Resultado Final</h1>
+                        
+                            <h3><div id="result-container"></div></h3>
+                            <p>meu anuncio</p>
+                            <h3><div id="result-container2"></div></h3>
+                        
+                       <!-- <button id="copiar-btn">Copiar Resultado</button> -->
+<br></br>
+                        
+
+                    
+
+                    </main>
+                    <!-- <script src="outrosArquivos/modificaResultado.js" defer></script> -->
+                     <script src="resultadoInicial.js" defer></script>
+                    <script src="resultado.js"></script>
+
+                    <footer>
+                        <p>&copy; 2025 Contador de Palpites. Todos os direitos reservados.</p>
+                    </footer>
+                    <div id="cookie-banner"
+                        style="position: fixed; bottom: 0; width: 100%; background: #333; color: #fff; padding: 10px; text-align: center; z-index: 1000; display: none;">
+                        <p>
+                            Usamos cookies para armazenar o resultado final. Ao continuar navegando, você concorda com
+                            isso.
+                            <button id="accept-cookies"
+                                style="background: #ffd700; border: none; padding: 5px 10px; margin-left: 10px; cursor: pointer;">Ok,
+                                entendi!</button>
+                        </p>
+                    </div>
+                </body>
+                <!-- </body> -->
+
+                <!-- <script>
+            // Exemplo de como o resultado seria carregado (pode ser substituído por lógica real)
+            const resultContainer = document.getElementById('result-container');
+    
+            // Recuperando o resultado do localStorage
+            const resultadoFinal = localStorage.getItem('resultadoFinal') || 'Nenhum resultado disponível no momento.';
+    
+            // Exibindo o resultado formatado
+            resultContainer.innerHTML = resultadoFinal.replace(/\n/g, "<br>");
+    
+            // Função para copiar o texto
+            const copiarBtn = document.getElementById('copiar-btn');
+            copiarBtn.addEventListener('click', function () {
+                // Copiando o conteúdo do resultado para a área de transferência
+                navigator.clipboard.writeText(resultadoFinal).then(() => {
+                const paginaOrigem = localStorage.getItem('paginaOrigem') || 'index.html';
+                window.location.href = paginaOrigem;
+                });
+            });
+        </script> -->
+
+</html>
