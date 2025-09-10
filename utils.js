@@ -12,9 +12,9 @@ const codigos = [
 ];
 
 function cortaTexto(nomes, cnpj, telefone) {
-    let nomesCortado = nomes.replace(/\d+|\./gm, '').split('\n')
-    let cnpjCortado = cnpj.split('\n')
-    let telefoneCortado = telefone.split('\n')
+    let nomesCortado = nomes.replace(/\d+|\./gm, '').split('\n').filter(x => x)
+    let cnpjCortado = cnpj.split('\n').filter(x => x)
+    let telefoneCortado = telefone.split('\n').filter(x => x)
 
     let dados = {
         cnpj: [], 
